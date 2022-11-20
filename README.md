@@ -41,3 +41,5 @@ Error 404 Page
 
 # Author
 [Naman Jain](https://github.com/Nmnjainsite)
+
+[Linkedin](https://www.linkedin.com/in/naman-jain-97382b231/) [Twitter](https://twitter.com/NamanJa83726591)
