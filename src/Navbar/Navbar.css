@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo&family=Fira+Sans:wght@300;400&family=Gentium+Book+Plus&family=Lato&family=Libre+Franklin:wght@100&family=Lora:ital,wght@1,500&family=Macondo&family=Oleo+Script+Swash+Caps&family=PT+Serif:ital,wght@0,400;1,700&family=Patua+One&family=Permanent+Marker&family=Roboto&family=Roboto+Slab:wght@300&family=Signika+Negative:wght@500;600&display=swap");
+
+.nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  width: 100%;
+  font-family: "Signika Negative", sans-serif;
+  border-bottom: 1px solid turquoise;
+}
+
+.header-typo {
+  margin: 1rem;
+  text-decoration: none;
+  color: #38bdf8;
+  font-family: "Signika Negative", sans-serif;
+}
+
+.login-btn {
+  background-color: #38bdf8;
+  color: white;
+  border-radius: 1px solid #38bdf8;
+  font-size: 1rem;
+  font-family: "Signika Negative", sans-serif;
+  border-radius: 0.3rem;
+  padding: 0.5rem 2.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Signika Negative", sans-serif;
+  border: 1px solid #38bdf8;
+  margin: 1rem;
+  text-decoration: none;
+}
+
+.login-btn:hover {
+  color: white;
+  background-color: turquoise;
+}
+
+.welcome {
+  color: grey;
+  font-size: 1.5rem;
+  font-family: "Signika Negative", sans-serif;
+}
+
+.login-container {
+  margin-top: 0.3em;
+}
+
+@media only screen and (max-width: 768px) {
+  .welcome {
+    display: none;
+  }
+  .login-container {
+    margin-top: 0.5em;
+  }
+  .nav-container {
+    font-size: 1rem;
+  }
+}
