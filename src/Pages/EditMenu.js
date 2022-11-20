@@ -6,7 +6,6 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 import EditPost from "./EditPost";
 import { useNavigate } from "react-router-dom";
 import { UserAuth } from "../Context/auth-context";
-
 const ITEM_HEIGHT = 48;
 
 export default function EditMenu({ setData }) {

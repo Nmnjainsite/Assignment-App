@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import "./Home.css";
-import { TextField, Typography } from "@mui/material";
+import { Button, TextField, Typography } from "@mui/material";
 import EditMenu from "./EditMenu";
 import { UserAuth } from "../Context/auth-context";
 import { useNavigate } from "react-router-dom";
 import SimpleSnackbar from "./Snackbar";
+
 export default function Home() {
   const [data, setData] = useState();
   const [title, setTitle] = useState();
@@ -36,8 +37,7 @@ export default function Home() {
           },
         })
           .then((response) => response.json())
-          .then((json) => setData((data) => data.concat(json)))
-          .reverse();
+          .then((json) => setData((data) => data.concat(json).reverse()));
       } catch (err) {
         console.log(err);
       }
