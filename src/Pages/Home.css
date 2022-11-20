@@ -2,7 +2,9 @@
 
 .create-post {
   color: #38bdf8;
+  font-weight: 200;
   text-align: center;
+  font-family: "Roboto Condensed";
 }
 .input-box {
   text-align: center;

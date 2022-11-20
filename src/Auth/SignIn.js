@@ -26,6 +26,15 @@ const Signin = () => {
       <div className="signup-page">
         <h1>Create Your Own Products Here</h1>
         <button onClick={handleGoogleSignIn} className="login-google">
+          <span
+            style={{
+              marginRight: "0.9rem",
+              fontWeight: "bold",
+              fontSize: "1.5rem",
+            }}
+          >
+            G+
+          </span>
           Sign In With Google
         </button>
       </div>

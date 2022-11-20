@@ -3,13 +3,13 @@ import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
-import Dialogs from "./Dialog";
+import EditPost from "./EditPost";
 import { useNavigate } from "react-router-dom";
 import { UserAuth } from "../Context/auth-context";
 
 const ITEM_HEIGHT = 48;
 
-export default function EditPost({ setData }) {
+export default function EditMenu({ setData }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -67,7 +67,7 @@ export default function EditPost({ setData }) {
         }}
       >
         <MenuItem>
-          <Dialogs setData={setData} />
+          <EditPost setData={setData} />
         </MenuItem>
         <MenuItem onClick={handleClose}>
           <span onClick={() => deletePost()}>Delete</span>

@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 import "./Home.css";
-import { Button, TextField, Typography } from "@mui/material";
-import EditPost from "./MenuItem";
+import { TextField, Typography } from "@mui/material";
+import EditMenu from "./EditMenu";
 import { toast } from "react-toastify";
-import { ToastContainer } from "react-toastify";
 import { UserAuth } from "../Context/auth-context";
 import { useNavigate } from "react-router-dom";
 import SimpleSnackbar from "./Snackbar";
@@ -92,7 +91,7 @@ export default function Home() {
                     float: "right",
                   }}
                 >
-                  <EditPost setData={setData} />
+                  <EditMenu setData={setData} />
                 </span>
                 <span> Title</span>
                 <Typography>{data.title.slice(0, 30)}</Typography>

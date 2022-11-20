@@ -19,7 +19,7 @@ const style = {
   p: 4,
 };
 
-export default function Dialogs({ setData }) {
+export default function EditPost({ setData }) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -84,7 +84,6 @@ export default function Dialogs({ setData }) {
           <Box sx={style}>
             <div>
               <p>
-                {" "}
                 <TextField
                   autoComplete="Title"
                   name="title"
@@ -120,7 +119,6 @@ export default function Dialogs({ setData }) {
                 />{" "}
               </p>
               <span onClick={handleClose}>
-                {" "}
                 <Button fullWidth variant="contained" onClick={editPost}>
                   Edit Post
                 </Button>

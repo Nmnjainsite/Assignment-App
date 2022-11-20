@@ -2,7 +2,6 @@ import { Button } from "@mui/material";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import NotFound from "../assets/NotFound.svg";
-import Navbar from "../Navbar/Navbar";
 
 const Error404 = () => {
   const navigate = useNavigate();
