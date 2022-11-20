@@ -6,6 +6,7 @@ import { toast } from "react-toastify";
 import { ToastContainer } from "react-toastify";
 import { UserAuth } from "../Context/auth-context";
 import { useNavigate } from "react-router-dom";
+import SimpleSnackbar from "./Snackbar";
 export default function Home() {
   const [data, setData] = useState();
   const [title, setTitle] = useState();
@@ -37,6 +38,7 @@ export default function Home() {
         })
           .then((response) => response.json())
           .then((json) => setData((data) => data.concat(json)));
+        toast.success("Post Created");
       } catch (err) {
         console.log(err);
       }
@@ -74,14 +76,7 @@ export default function Home() {
         />
 
         <p>
-          <Button
-            sx={{ width: "20%", bgcolor: "#38bdf8" }}
-            onClick={createPost}
-            fullWidth
-            variant="contained"
-          >
-            Post
-          </Button>
+          <SimpleSnackbar createPost={createPost} />
         </p>
       </div>
 

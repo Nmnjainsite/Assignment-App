@@ -4,6 +4,7 @@ import Navbar from "./Navbar/Navbar";
 import { AuthContextProvider } from "./Context/auth-context";
 import Home from "./Pages/Home";
 import Signin from "./Auth/SignIn";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
