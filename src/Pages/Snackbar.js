@@ -21,9 +21,6 @@ export default function SimpleSnackbar({ createPost }) {
 
   const action = (
     <React.Fragment>
-      <Button color="secondary" size="small" onClick={handleClose}>
-        UNDO
-      </Button>
       <IconButton
         size="small"
         aria-label="close"
@@ -38,7 +35,6 @@ export default function SimpleSnackbar({ createPost }) {
   return (
     <div>
       <span onClick={handleClick}>
-        {" "}
         <Button
           onClick={createPost}
           sx={{ width: "20%", bgcolor: "#38bdf8" }}

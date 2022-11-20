@@ -36,7 +36,8 @@ export default function Home() {
           },
         })
           .then((response) => response.json())
-          .then((json) => setData((data) => data.concat(json)));
+          .then((json) => setData((data) => data.concat(json)))
+          .reverse();
       } catch (err) {
         console.log(err);
       }
