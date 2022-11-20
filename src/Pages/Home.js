@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import "./Home.css";
 import { TextField, Typography } from "@mui/material";
 import EditMenu from "./EditMenu";
-import { toast } from "react-toastify";
 import { UserAuth } from "../Context/auth-context";
 import { useNavigate } from "react-router-dom";
 import SimpleSnackbar from "./Snackbar";
@@ -12,6 +11,7 @@ export default function Home() {
   const [body, setBody] = useState();
   const { user } = UserAuth();
   const navigate = useNavigate();
+
   useEffect(() => {
     try {
       fetch("https://jsonplaceholder.typicode.com/posts")
@@ -37,7 +37,6 @@ export default function Home() {
         })
           .then((response) => response.json())
           .then((json) => setData((data) => data.concat(json)));
-        toast.success("Post Created");
       } catch (err) {
         console.log(err);
       }
@@ -94,7 +93,7 @@ export default function Home() {
                   <EditMenu setData={setData} />
                 </span>
                 <span> Title</span>
-                <Typography>{data.title.slice(0, 30)}</Typography>
+                <Typography>{data.title}</Typography>
                 <li style={{ marginTop: "0.5rem" }}>Content</li>
                 <Typography>{data.body}</Typography>
               </ul>
