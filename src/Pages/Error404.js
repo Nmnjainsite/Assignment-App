@@ -9,7 +9,6 @@ const Error404 = () => {
 
   return (
     <>
-      <Navbar />
       <div className="error-container">
         <div style={{ fontSize: "3rem", textAlign: "center" }}>
           <p>
