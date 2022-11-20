@@ -35,7 +35,7 @@ Error 404 Page
 # Technology
 
 * React
-* MaterialUI
+* Material UI
 * Css
 * Js
 
