@@ -32,5 +32,12 @@ Error 404 Page
 * 404 page for unknown route.
 ![404for](https://user-images.githubusercontent.com/101793920/202908091-7b30ec35-5a2d-41ed-8ad4-db101efdd62d.png)
 
+# Technology
+
+* React
+* MaterialUI
+* Css
+* Js
+
 # Author
 [Naman Jain](https://github.com/Nmnjainsite)
